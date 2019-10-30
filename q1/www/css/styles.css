@@ -1,0 +1,287 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap);
+@font-face {
+    font-family: 'bobs_burgers_2regular';
+    src: url('bobs_burgers_font/_2-webfont.woff2') format('woff2'),
+         url('bobs_burgers_font/bobs_burgers_2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bobs_burgersregular';
+    src: url('bobs_burgers_font/bobs_burgers-webfont.woff2') format('woff2'),
+         url('bobs_burgers_font/bobs_burgers-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Changed to the custom font from google fonts */
+body {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 20px;
+  font-weight: normal;
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  margin: 50px;
+  color: white;
+}
+
+header {
+  background: rgba(210,74,136,0.9);
+  padding: 1px;
+  color: white;
+  text-align: center;
+}
+
+/* Navigation Dropdown Bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(255,255,255,0.9);
+}
+
+li {
+  float: left;
+  color: #423131;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+}
+
+.dropbtn {
+  display: inline-block;
+  color: inherit;
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #217eff;
+  color: white;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgba(255,255,255,0.9);
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 14px 18px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+li a:hover:not(.active) {
+  background-color: #217eff;
+  color: white;
+}
+
+li:last-child {
+  float: right;
+}
+
+.active {
+  background-color: #f8dc4a;
+}
+
+.fixed {
+  background-color: #f8dc4a;
+}
+
+/* This heading is specifically for University homepage */
+h1 {
+  color: white;
+  font-family: bobs_burgers_2regular, bobs_burgersregular,serif;
+  font-size: 100px;
+  font-weight: normal;
+}
+
+h2 {
+  color: white;
+  font-size: 1.5em;
+  font-family: bobs_burgersregular, bobs_burgers_2regular,serif;
+  font-weight: normal;
+}
+
+h2 a:hover {
+  color: #217eff;
+}
+
+h3 {
+  font-size: 1.15em;
+  color: white;
+}
+
+h3 a:hover {
+  color: #217eff;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+pre {
+  font-family: 'Baloo Bhai', cursive;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+}
+
+/* Cart buttons */
+button {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 1.0em;
+  background-color: #f8dc4a;
+  border: none;
+  color: #423131;
+  padding: 10px 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #217eff;
+  color: white;
+}
+
+/* Layout */
+.left-column {
+  float: left;
+  width: 50.0%;
+  /*background: rgba(66,49,49,0.95);*/
+  padding: 20px;
+  /*border-right-style: dashed;
+  border-width: thick;*/
+}
+
+.one-column .left-column img {
+  width: 100%;
+}
+
+.one-column .left-column {
+  padding: 10px;
+}
+
+.right-column {
+  float: left;
+  padding: 20px;
+  width: 50.0%;
+  /*background: rgba(66,49,49,0.95);*/
+  /*border-left-style: dashed;
+  border-width: thick;*/
+}
+
+.one-column .right-column img {
+   width: 100%;
+}
+
+.one-column .right-column {
+  padding: 10px;
+}
+
+.one-column {
+  float: left;
+  padding: 20px;
+  width: 100.0%;
+  background: rgba(66,49,49,0.95);
+  border-left-style: dashed;
+  border-right-style: dashed;
+  border-width: thick;
+}
+
+.one-column img {
+   width: 32.8%;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Some hover features for footer */
+footer {
+  background: rgba(210,74,136,0.9);
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+
+footer a:hover {
+  color: #217eff;
+}
+
+footer a:active {
+  /*text-decoration: none;*/
+  color: #423131;
+}
+
+/* Stack columns */
+@media (max-width: 650px) and (min-width: 241px) {
+  .left-column, .right-column {
+    width: 100%;
+    height: auto;
+  }
+  body {
+    margin: 10px;
+    font-size: 19px;
+  }
+  .one-column img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 240px) {
+  .left-column, .right-column {
+    width: 100%;
+    height: auto;
+  }
+  body {
+    margin: 5px;
+    font-size: 15px;
+  }
+  ul {
+    font-size: 12px;
+  }
+  h1{
+    font-size: 90px;
+  }
+  .one-column img {
+    width: 100%;
+  }
+}
