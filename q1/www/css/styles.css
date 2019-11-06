@@ -101,7 +101,8 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #f8dc4a;
+  background-color: #217eff;
+  font-weight: bold;
 }
 
 .fixed {
@@ -263,6 +264,7 @@ footer a:active {
     width: 100%;
     height: auto;
   }
+
   body {
     margin: 5px;
     font-size: 15px;
