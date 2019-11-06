@@ -1,0 +1,26 @@
+/* <SHOPPING_CART> */
+#cart-button {
+  color: #423131 !important;
+}
+
+#cart-button:visited {
+  color: #423131;
+}
+
+#cart-button:hover {
+  color: #217eff !important;
+}
+
+#cart-button:active {
+  background-color: #f8dc4a;
+  color: #f8dc4a;
+}
+
+.delete-icon {
+  color: red !important;
+}
+
+.delete-icon:hover {
+  color: red !important;
+}
+/* </SHOPPING_CART> */

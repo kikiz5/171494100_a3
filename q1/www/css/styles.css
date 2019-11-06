@@ -23,19 +23,15 @@
 
 /* Changed to the custom font from google fonts */
 body {
-  font-family: 'Baloo Bhai', cursive;
-  font-size: 20px;
-  font-weight: normal;
   background-image: url("../img/background.jpg");
   background-position: center;
   background-attachment: fixed;
-  margin: 50px;
-  color: white;
+  margin: 0px;
 }
 
 header {
   background: rgba(210,74,136,0.9);
-  padding: 1px;
+  padding: 5px;
   color: white;
   text-align: center;
 }
@@ -43,10 +39,10 @@ header {
 /* Navigation Dropdown Bar*/
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 8px;
   overflow: hidden;
-  background: rgba(255,255,255,0.9);
+  background: rgba(248,220,74,0.85);
 }
 
 li {
@@ -102,10 +98,6 @@ li.dropdown {
 li a:hover:not(.active) {
   background-color: #217eff;
   color: white;
-}
-
-li:last-child {
-  float: right;
 }
 
 .active {
@@ -216,7 +208,7 @@ button:hover {
   float: left;
   padding: 20px;
   width: 100.0%;
-  background: rgba(66,49,49,0.95);
+  background: rgba(255,255,255,0.75);
   border-left-style: dashed;
   border-right-style: dashed;
   border-width: thick;

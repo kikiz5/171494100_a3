@@ -7,24 +7,27 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="http://wlu-cp202.appspot.com/CP202/Fall2019/shopping_cart_v1/cart.js" async></script>
+
+    <!-- YOU MUST MODIFY THIS VALUE TO POINT TO YOUR ACTUAL CHECKOUT PAGE -->
+    <script>localStorage.checkoutURL = '../checkout.html';</script>
   </head>
 
   <body>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a class="active" href="#products">Products</a></li>
+      <li><a href="pink.html">Pink Pumpkin Donut</a></li>
+      <li><a href="orange.html">Orange Pumpkin Donut</a></li>
+    </ul>
     <header>
       <h1>Kiki's Donuts</h1>
     </header>
-
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="#products" class="dropbtn active">Products</a>
-        <div class="dropdown-content">
-          <a href="pink.html">Pink Pumpkin Donut</a>
-          <a href="orange.html">Orange Pumpkin Donut</a>
-        </div>
-      </li>
-      <li><a class="fixed"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-    </ul>
 
     <main>
       <section>
@@ -32,7 +35,9 @@
         <div class="left-column">
           <h2><a href="pink.html">Jack-o'-Lantern Pink Pumpkin Donut</a></h2>
           <h2>59.99 CAD/dz</h2>
-          <button>+ ADD</button>
+          <button type="button" onclick="clientAddItemToCart()" >+ ADD</button>
+          <script>clientAddItemToCart({prodName: 'Unicorn Donut', prodDesc: 'Great donut', prodPrice: '25.00', prodQty: '3'});</script>
+
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam arcu eros, ultricies quis congue sit amet, tincidunt eu ex. Nam odio diam, euismod laoreet urna ac, mattis euismod elit. Phasellus posuere sagittis orci eget pellentesque.
           </p>
           <a href="pink.html"><img src="img/pink_donut.jpg" alt="Pink Pumpkin"></a>
@@ -41,7 +46,9 @@
         <div class="right-column">
           <h2><a href="orange.html">Jack-o'-Lantern Orange Pumpkin Donut</a></h2>
           <h2>59.99 CAD/dz</h2>
-          <button>+ ADD</button>
+          <button type="button" onclick="clientAddItemToCart()">+ ADD</button>
+          <script>clientAddItemToCart({prodName: 'Unicorn Donut', prodDesc: 'Great donut', prodPrice: '25.00', prodQty: '3'});</script>
+
           <p>libero at accumsan. Mauris eu diam et tortor laoreet finibus. Sed eu erat sapien. Maecenas dictum nunc et pellentesque bibendum. Praesent a placerat purus. mattis euismod elit. Phasellus posuere sagittis orci eget pellentesque.
           </p>
           <a href="orange.html"><img src="img/orange_donut.jpg" alt="Orange Pumpkin"></a>
