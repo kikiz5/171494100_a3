@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>FakeChimp</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-flulid">
+  <div class="row">
+  <div class="col-sm-4">
+    <img style="width:100%;" src="img/logo-color.png">
+  </div>
+
+  <div class="col-sm-8">
+    <header>Get started with your account</header>
+    <br>
+    <p>Find your people. Engage your customers. Build your brand. Do it all with FakeChimp's Marketing Platform.</p>
+    <form onsubmit="return validateForm();"
+      action="http://cp202-server.appspot.com/register"
+      method="post">
+      <input type="hidden" name="student_id" id="student_id" value="1111">
+      <p><b>Email:</b>
+      <input type="text" name="email" id="email">
+      </p>
+
+      <p><b>Username:</b>
+      <input type="text" name="username" id="username">
+      </p>
+
+      <p><b>Password:</b>
+        <span>
+        <a href="#" onclick="alert('Eye clicked.')">
+          <i class="fa fa-eye" style="color: #007c89" aria-hidden="true"></i> Show</a></span>
+      <input type="text" name="password" id="password">
+      </p>
+
+      <p>
+        <div class="row">
+        <div class="col-5">
+        <p><input type="submit" value="Get Started!" /></p>
+        </div>
+
+        <div class="col-7">
+          <p>By clicking the "Get Started!" button, you are creating a FakeChimp account.</p>
+        </div>
+
+        </div>
+      </p>
+    </form>
+
+    <footer>
+      <p>©2019 All Rights Reserved. FakeChimp® is not a registered trademark of Kiki Wu.
+      <a href="#" class="text-muted">Cookie Preferences</a>,
+      <a href="#" class="text-muted">Privacy</a>, and
+      <a href="#" class="text-muted">Terms</a>.</p>
+    </footer>
+    </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
