@@ -84,6 +84,16 @@ span {
   margin: 5px 0px;
 }
 
+
+.logo-color {
+  display: inline;
+}
+
+.logo-bw {
+  display: inline;
+}
+
+
 /* Mobile */
 @media only screen and (max-width: 425px) {
     body {
@@ -113,6 +123,10 @@ span {
       text-align: center;
     }
 
+    .logo-color {
+      display: none;
+    }
+
 }
 
 /* Tablet */
@@ -121,19 +135,24 @@ span {
       padding: 0px 155px;
       padding-bottom: 80px;
     }
-    img {
-      width: 120px !important;
-    }
 
     .col-lg-4{
-        text-align: center;
-        margin-top: 5px;
-        margin-bottom: 15px;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 15px;
     }
 
     header {
       margin: 0px 30px;
       text-align: center;
+    }
+
+    .logo-color {
+      display: none;
+    }
+
+    img {
+      width: 120px;
     }
 
 }
@@ -149,5 +168,8 @@ span {
       width:100%;
     }
 
+    .logo-bw {
+      display: none;
+    }
 
 }
