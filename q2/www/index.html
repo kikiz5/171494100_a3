@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>FakeChimp</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" async></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
@@ -23,8 +24,9 @@
     <p>Find your people. Engage your customers. Build your brand. Do it all with FakeChimp's Marketing Platform.</p>
     <form onsubmit="return validateForm();"
       action="http://cp202-server.appspot.com/register"
-      method="post">
-      <input type="hidden" name="student_id" id="student_id" value="1111">
+      method="post"
+      enctype="multipart/form-data">
+      <input type="hidden" name="student_id" id="student_id" value="171494100">
       <p><b>Email:</b>
       <input type="text" name="email" id="email">
       </p>
@@ -35,15 +37,16 @@
 
       <p><b>Password:</b>
         <span>
-        <a href="#" onclick="alert('Eye clicked.')">
-          <i class="fa fa-eye" style="color: #007c89" aria-hidden="true"></i> Show</a></span>
-      <input type="text" name="password" id="password">
+        <a href="#" onclick="showPassword()">
+          <i class="fa fa-eye" style="color: #007c89" aria-hidden="true"></i> Show</a>
+        </span>
+      <input type="password" id="mypassword">
       </p>
 
       <p>
         <div class="row">
         <div class="col-5">
-        <p><input type="submit" value="Get Started!" /></p>
+        <p><input type="submit" value="Get Started!" id="mybtn" disabled/></p>
         </div>
 
         <div class="col-7">
@@ -55,10 +58,7 @@
     </form>
 
     <footer>
-      <p>©2019 All Rights Reserved. FakeChimp® is not a registered trademark of Kiki Wu.
-      <a href="#" class="text-muted">Cookie Preferences</a>,
-      <a href="#" class="text-muted">Privacy</a>, and
-      <a href="#" class="text-muted">Terms</a>.</p>
+      <p>©2019 All Rights Reserved. FakeChimp® is a registered trademark of WLUCP202 Class.
     </footer>
     </div>
 
