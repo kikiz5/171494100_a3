@@ -72,7 +72,7 @@ function validatePassword() {
 }
 
 function validateForm() {
-  document.getElementById("mybtn").disabled = false;
+  document.getElementById("register").disabled = false;
   if (!validateEmail()) {
     return false;
   }
@@ -85,16 +85,29 @@ function validateForm() {
     return false;
   }
 
-  document.getElementById("mybtn").disabled = false;
   return true;
 }
 
 /* Toggle Password */
 function showPassword() {
-  var x = document.getElementById("mypassword");
+  var x = document.getElementById("password");
   if (x.type === "password") {
     x.type = "text";
   } else {
     x.type = "password";
   }
 }
+
+$('.vcheck').change(function() {
+    var u_name = $('#username').val();
+    var p_word = $('#password').val();
+    var e_mail = $('#email').val();
+    // We check for null (empty) values
+    if (u_name == '' || p_word == '' || e_mail == '') {
+        // When we find something blank set or keep the button to disabled
+        $('#register').attr('disabled', 'disabled');
+    } else {
+        // When all conditions are met and values are good we enable the button
+        $('#register').removeAttr('disabled');
+    }
+});

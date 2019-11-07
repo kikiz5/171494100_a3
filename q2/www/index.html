@@ -7,18 +7,19 @@
   <title>FakeChimp</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/app.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="container-flulid">
+  <div class="container-fluid">
   <div class="row">
-  <div class="col-sm-4">
-    <img style="width:100%;" src="img/logo-color.png">
+  <div class="col-lg-4">
+    <img src="img/logo-color.png" alt="logo">
   </div>
 
-  <div class="col-sm-8">
+  <div class="col-lg-8">
     <header>Get started with your account</header>
     <br>
     <p>Find your people. Engage your customers. Build your brand. Do it all with FakeChimp's Marketing Platform.</p>
@@ -28,28 +29,28 @@
       enctype="multipart/form-data">
       <input type="hidden" name="student_id" id="student_id" value="171494100">
       <p><b>Email:</b>
-      <input type="text" name="email" id="email">
+      <input type="text" name="email" id="email" class="form-control vcheck">
       </p>
 
       <p><b>Username:</b>
-      <input type="text" name="username" id="username">
+      <input type="text" name="username" id="username" class="form-control vcheck">
       </p>
 
       <p><b>Password:</b>
         <span>
-        <a href="#" onclick="showPassword()">
+        <a onclick="showPassword()">
           <i class="fa fa-eye" style="color: #007c89" aria-hidden="true"></i> Show</a>
         </span>
-      <input type="password" id="mypassword">
+      <input type="password" id="password" class="form-control vcheck">
       </p>
 
       <p>
         <div class="row">
-        <div class="col-5">
-        <p><input type="submit" value="Get Started!" id="mybtn" disabled/></p>
+        <div class="col-sm-5">
+        <p><input type="submit" value="Get Started!" id="register" disabled="disabled"/></p>
         </div>
 
-        <div class="col-7">
+        <div class="col-sm-7">
           <p>By clicking the "Get Started!" button, you are creating a FakeChimp account.</p>
         </div>
 
