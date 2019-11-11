@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>FakeChimp</title>
+  <title>FakeChimp 2.0</title>
   <link rel="stylesheet" href="css/styles.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/app.js" async></script>
@@ -25,37 +25,30 @@
     <br>
     <p>Find your people. Engage your customers. Build your brand. Do it all with FakeChimp's Marketing Platform.</p>
     <form onsubmit="return validateForm();"
-      action="http://cp202-server.appspot.com/register"
+      action="http://cp202-server.appspot.com/register_with_image"
       method="post"
       enctype="multipart/form-data">
       <input type="hidden" name="student_id" id="student_id" value="171494100">
+
       <p><b>Email</b>
       <input type="text" name="email" id="email" class="vcheck">
       </p>
 
-      <p><b>Username</b>
-      <input type="text" name="username" id="username" class="vcheck">
+      <p><b>Country</b>
+        <div class="styled-select">
+      <select id="country" name="country" class="vcheck">
+        <option value="">--Please choose an option--</option>
+        <option value="c1">Canada</option>
+        <option value="c2">United States</option>
+      </select></div>
       </p>
 
-      <p><b>Password</b>
-        <span>
-        <a onclick="showPassword()">
-          <i class="fa fa-eye" style="color: #007c89" aria-hidden="true"></i> Show</a>
-        </span>
-      <input type="password" name="password" id="password" class="vcheck">
+      <p><b>Description</b>
+        <textarea id="description" name="description" rows="4" class="vcheck"></textarea>
       </p>
 
-      <p>
-        <div class="row">
-        <div class="col-sm-5">
-        <p><input type="submit" value="Get Started!" id="register" disabled="disabled"/></p>
-        </div>
-
-        <div class="col-sm-7">
-          <p>By clicking the "Get Started!" button, you are creating a FakeChimp account.</p>
-        </div>
-
-        </div>
+      <p><b>Image Upload</b>
+        <input type="submit" value="Get Started!" id="register" disabled="disabled"/>
       </p>
     </form>
 
