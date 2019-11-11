@@ -1,0 +1,137 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Changed to the custom font from google fonts */
+body {
+  font-family: Verdana, Arial !important;
+  background-color: #f9fafb !important;
+  text-align: center !important;
+}
+
+header {
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
+
+/* This heading is specifically for University homepage */
+h2 {
+  color: black;
+  font-family: Verdana, Arial;
+  font-size: 28px !important;
+  font-weight: normal !important;
+}
+
+span {
+  display: block;
+  color: black;
+  font-size: 14px !important;
+  font-family: Verdana, Arial;
+  font-weight: normal !important;
+  margin-bottom: 0px !important;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container-custom {
+  margin: 0 24.5px;
+  margin-top: 20px;
+  padding: 0px 20px;
+  padding-top: 60px;
+}
+
+.col-lg-4 img {
+  width: 150px;
+  height: 150px;
+  border: solid 5px transparent;
+  padding: 5px 5px;
+  border-radius: 90px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 425px) {
+
+  span {
+    display: none;
+  }
+
+  .col-lg-8{
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .col img {
+    width: 293px;
+    padding: 12px 12px;
+  }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 426px) and (max-width: 960px) {
+
+  .col-lg-8{
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-right: 100px !important;
+    padding-left: 20px !important;
+  }
+
+  .col-lg-4{
+    padding-left: 45px !important;
+  }
+
+  .col img {
+    width: 293px;
+    padding: 12px 12px;
+  }
+
+  h2 {
+    padding-bottom: 25px;
+  }
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 961px) {
+
+  .col-lg-8{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    padding-right: 130px !important;
+    padding-left: 40px !important;
+  }
+
+  .col-lg-4{
+    padding-left: 45px !important;
+  }
+
+  .col img {
+    width: 293px;
+    padding: 10px 10px;
+  }
+
+  .container-custom {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    padding-bottom: 25px;
+  }
+
+}
