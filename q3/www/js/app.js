@@ -27,83 +27,22 @@ function validateEmailNoRegex() {
   return true;
 }
 
-function validateUsername() {
-  var username = document.getElementById("username").value;
-
-  var re = /^[^0-9\s][^\s]{7,24}$/;
-
-  var test = re.test(String(username));
-
-  if (!test) {
-    alert("Please enter a valid username.")
-
-    return false;
-  }
-
-  if (username == '') {
-    alert("Please enter a valid username.");
-
-    return false;
-  }
-
-  return true;
-}
-
-function validatePassword() {
-  var password = document.getElementById("password").value;
-
-  var re = /^[^0-9\s][^\s]{7,24}$/;
-
-  var test = re.test(String(password));
-
-  if (!test) {
-    alert("Please enter a valid password.")
-
-    return false;
-  }
-
-  if (password == '') {
-    alert("Please enter a valid password.");
-
-    return false;
-  }
-
-  return true;
-}
-
 function validateForm() {
   if (!validateEmail()) {
     return false;
   }
 
-  if (!validateUsername()) {
-    return false;
-  }
-
-  if (!validatePassword()) {
-    return false;
-  }
-
   return true;
-}
-
-/* Toggle Password */
-function showPassword() {
-  var x = document.getElementById("password");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
 }
 
 /* Enable Submit button */
 $('.vcheck').change(function() {
-    var u_name = $('#username').val();
-    var p_word = $('#password').val();
     var e_mail = $('#email').val();
+    var c_try = $('#country').val();
+    var d_tion = $('textarea#description').val();
+    var i_file = $('#avatarImage').val();
     // We check for null (empty) values
-    if (u_name == '' || p_word == '' || e_mail == '') {
+    if (c_try == '' || d_tion == '' || e_mail == '' || !i_file) {
         // When we find something blank set or keep the button to disabled
         $('#register').attr('disabled', 'disabled');
     } else {

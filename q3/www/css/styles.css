@@ -42,7 +42,7 @@ input[type=submit] {
   width: 100%;
 }
 
-input[type=text], input[type=tel], input[type=date], select, textarea {
+input[type=text], input[type=file], input[type=date], select, textarea {
   font-size: 1em;
   width: 100%;
   padding: 8px 12px;
@@ -52,19 +52,8 @@ input[type=text], input[type=tel], input[type=date], select, textarea {
   outline: none;
 }
 
-input[type=text]:hover ,input[type=password]:hover{
+input[type=text]:hover , .styled-select:hover, textarea:hover, input[type=file]:hover{
   border-color: #007c89;
-}
-
-input[type=password] {
-  font-size: 1em;
-  width: 100%;
-  padding: 8px 12px;
-  margin: 12px 0;
-  border: 2px solid #ccc;
-  border-radius: 3px;
-  outline: none;
-  width: 100%;
 }
 
 input[type=submit]:enabled {
@@ -72,6 +61,11 @@ input[type=submit]:enabled {
   color: white;
 }
 
+input[type=file]::-webkit-file-upload-button {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: inherit;
+}
 span {
   float: right;
 }
@@ -110,11 +104,16 @@ span {
   -webkit-appearance: none;
 }
 
-textarea {
-  width: 100%;
-  position: relative;
-  top: 12px;
+.styled-textarea {
+  display: inline-block;
+  width: 100%
 }
+
+.styled-textarea textarea {
+  display: block;
+}
+
+
 
 /* Mobile */
 @media only screen and (max-width: 425px) {
