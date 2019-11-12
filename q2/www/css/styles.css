@@ -165,11 +165,17 @@ span {
     }
 
     img {
-      width:100%;
+      width: 120px;
     }
 
     .logo-bw {
       display: none;
+    }
+
+    .col-lg-4{
+      text-align: right;
+      margin-top: 5px;
+      margin-bottom: 15px;
     }
 
 }
