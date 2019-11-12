@@ -7,7 +7,7 @@ $(document).ready(function(){
         items.push( "<li id='" + key + "'>" + val + "</li>" );
       });
 
-      $( "<ul/>", {
+      $( "<ol/>", {
         "class": "my-new-list",
         html: items.join( "" )
       }).appendTo( "body" );
