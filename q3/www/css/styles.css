@@ -133,7 +133,7 @@ span {
       width: 100%
     }
 
-    .col-lg-4{
+    .col-lg-3{
         text-align: center;
         margin-top: 5px;
         margin-bottom: 15px;
@@ -157,7 +157,7 @@ span {
       padding-bottom: 80px;
     }
 
-    .col-lg-4{
+    .col-lg-3{
       text-align: center;
       margin-top: 5px;
       margin-bottom: 15px;
@@ -194,7 +194,7 @@ span {
       display: none;
     }
 
-    .col-lg-4{
+    .col-lg-3{
       text-align: right;
       margin-top: 5px;
       margin-bottom: 15px;
